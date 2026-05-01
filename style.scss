@@ -39,6 +39,11 @@ input[type="text"] {
 }
 
 @media (max-width: 600px) {
+
+    body {
+        margin: none;
+    }
+    
     .movie {
         width: 150px;
         min-width: 150px;
@@ -54,6 +59,11 @@ input[type="text"] {
 }
 
 @media (max-width: 400px) {
+
+    body {
+        margin: none;
+    }
+
     .movie {
         width: 120px;
         min-width: 120px;
@@ -66,6 +76,11 @@ input[type="text"] {
 
     header h1 {
         font-size: 18px;
+    }
+
+    #results {
+    display: flex;
+    flex-wrap: nowrap;  
     }
 }
 

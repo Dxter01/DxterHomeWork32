@@ -1,0 +1,39 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+body {
+    @include body-parameters;
+    @include fonts;
+}
+
+.search-section {
+    @include secondary-parameters;
+    @include fonts;
+}
+
+header {
+    @include basic-parameters;
+    @include fonts;
+}
+
+
+.movie {
+    @include movie-card-parameters;
+    @include fonts;
+}
+
+#results {
+    @include results-parameters;
+    @include fonts;
+}
+
+
+input[type="text"] {
+    @include search-input-parameters;
+    @include fonts;
+}
+
+.error {
+    @include error-parameters;
+    @include fonts;
+}

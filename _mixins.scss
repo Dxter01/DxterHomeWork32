@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+@mixin body-parameters {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: $text-color;
+    text-align: center;
+    background-color: $background-color;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@mixin basic-parameters {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+
+@mixin secondary-parameters {
+    background-color: $secondary-color;
+    padding: 20px;  
+    text-align: center;
+    
+}
+
+@mixin results-parameters {
+   display: flex;
+    flex-wrap: nowrap;  
+    overflow-x: auto;   
+    gap: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 10px;
+    background-color: $secondary-color;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+@mixin movie-card-parameters {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;;
+    }
+
+    p {
+        margin-top: auto;
+    }
+}
+
+@mixin search-input-parameters {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 3px solid $primary-color;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: $search-color;
+    color: $text-color;
+}
+
+@mixin error-parameters {
+    color: $text-color;
+    font-size: 18px;
+}
+
+@mixin fonts {
+    font-family: Arial, sans-serif;
+}
+
+
